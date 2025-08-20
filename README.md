@@ -45,31 +45,31 @@ docker compose up -d --build
 
 ### Создание задачи
 ```bash
-curl -X POST "http://localhost:8000/tasks/" \
+curl -X POST "http://127.0.0.2:2048/tasks/" \
   -H "Content-Type: application/json" \
   -d '{"title": "Купить молоко", "description": "2.5% жирности"}'
 ```
 
 ### Получение всех задач
 ```bash
-curl "http://localhost:8000/tasks/"
+curl "http://127.0.0.2:2048/tasks/"
 ```
 
 ### Получение конкретной задачи
 ```bash
-curl "http://localhost:8000/tasks/550e8400-e29b-41d4-a716-446655440000"
+curl "http://127.0.0.2:2048/tasks/550e8400-e29b-41d4-a716-446655440000"
 ```
 
 ### Обновление задачи
 ```bash
-curl -X PUT "http://localhost:8000/tasks/550e8400-e29b-41d4-a716-446655440000" \
+curl -X PUT "http://127.0.0.2:2048/tasks/550e8400-e29b-41d4-a716-446655440000" \
   -H "Content-Type: application/json" \
   -d '{"title": "Купить хлеб", "description": "Бородинский"}'
 ```
 
 ### Удаление задачи
 ```bash
-curl -X DELETE "http://localhost:8000/tasks/550e8400-e29b-41d4-a716-446655440000"
+curl -X DELETE "http://127.0.0.2:2048/tasks/550e8400-e29b-41d4-a716-446655440000"
 ```
 
 ## 📚 Документация API
