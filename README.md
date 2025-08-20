@@ -10,7 +10,7 @@ git clone https://github.com/Ququrruzza/hh_python.git
 cd hh_python
 ```
 
-### 2. Настройка окружения
+### 2. Настройка окружения (Отредактируйте demo_env)
 ```bash
 cp demo_env .env
 ```
