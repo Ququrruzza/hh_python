@@ -3,8 +3,7 @@ from sqlalchemy.orm import declarative_base
 from decouple import config
 
 
-SQLALCHEMY_DATABASE_URL = config('DATABASE_URL').replace(
-    'postgresql://', 'postgresql+asyncpg://')
+SQLALCHEMY_DATABASE_URL = config('DATABASE_URL')
 
 engine = create_async_engine(SQLALCHEMY_DATABASE_URL, echo=True)
 AsyncSessionLocal = async_sessionmaker(
